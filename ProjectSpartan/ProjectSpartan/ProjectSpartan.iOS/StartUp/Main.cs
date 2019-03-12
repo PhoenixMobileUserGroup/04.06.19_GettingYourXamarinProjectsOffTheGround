@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ProjectSpartan.iOS
+namespace ProjectSpartan.iOS.StartUp
 {
     public class Application
     {

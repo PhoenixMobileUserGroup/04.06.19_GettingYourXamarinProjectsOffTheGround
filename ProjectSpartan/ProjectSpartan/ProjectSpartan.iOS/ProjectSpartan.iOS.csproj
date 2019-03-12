@@ -90,8 +90,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
+    <Compile Include="StartUp\Main.cs" />
+    <Compile Include="StartUp\AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,9 +152,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\ProjectSpartan\ProjectSpartan.csproj">
-      <Project>{CDA18B6F-721D-42D7-9D04-E78B52CCEA90}</Project>
-      <Name>ProjectSpartan</Name>
+    <ProjectReference Include="..\ProjectSpartan\ProjectSpartan.UI.csproj">
+      <Project>{4DACF82F-A8B0-4794-A52C-90371F043927}</Project>
+      <Name>ProjectSpartan.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dependencies\" />
   </ItemGroup>
 </Project>

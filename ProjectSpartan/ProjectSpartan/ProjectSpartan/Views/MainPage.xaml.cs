@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ProjectSpartan
+namespace ProjectSpartan.UI
 {
     public partial class MainPage : ContentPage
     {
