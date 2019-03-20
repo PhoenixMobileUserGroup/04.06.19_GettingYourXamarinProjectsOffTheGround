@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjectSpartan.UI.StartUp;
+using SimpleInjector;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,16 +9,19 @@ namespace ProjectSpartan.UI
 {
     public partial class App : Application
     {
+        private Container Container { get; set; }
+
         public App()
         {
             InitializeComponent();
-
+            Container = IOCConfigurationHelper.GetRegisteredContainer();
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+            
         }
 
         protected override void OnSleep()
