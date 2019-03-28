@@ -12,3 +12,5 @@ namespace ProjectSpartan.UI.ViewModels
         public Task OnDisappearing() { return Task.CompletedTask; }
     }
 }
+
+

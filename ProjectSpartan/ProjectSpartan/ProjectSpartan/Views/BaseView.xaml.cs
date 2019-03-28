@@ -1,0 +1,25 @@
+﻿using ProjectSpartan.UI.ViewModels;
+using System;
+using Xamarin.Forms;
+
+namespace ProjectSpartan.UI.Views
+{
+    public partial class BaseView : ContentPage
+    {
+        public BaseView()
+        {
+            InitializeComponent();
+            Title = (BindingContext as BaseViewModel).Title;
+        }
+
+        private async void OnAppearing(object sender, EventArgs e)
+        {
+            await (BindingContext as BaseViewModel)?.OnAppearing();
+        }
+
+        private async void OnDisappearing(object sender, EventArgs e)
+        {
+            await (BindingContext as BaseViewModel)?.OnDisappearing();
+        }
+    }
+}
