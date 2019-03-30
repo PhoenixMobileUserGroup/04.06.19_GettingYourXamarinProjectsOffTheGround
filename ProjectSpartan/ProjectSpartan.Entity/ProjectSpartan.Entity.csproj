@@ -12,4 +12,8 @@
     <Folder Include="Structs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+
 </Project>
