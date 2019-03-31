@@ -1,0 +1,10 @@
+﻿namespace ProjectSpartan.UI.ViewModels
+{
+    public class MainPageViewModel : BaseViewModel
+    {
+        public MainPageViewModel()
+        {
+            Title = "Welcome to Xamarin.Forms";
+        }
+    }
+}

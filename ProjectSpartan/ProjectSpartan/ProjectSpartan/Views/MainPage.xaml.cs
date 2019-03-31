@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using ProjectSpartan.UI.ViewModels;
 
-namespace ProjectSpartan.UI
+namespace ProjectSpartan.UI.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : BaseView
     {
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainPageViewModel();
         }
     }
 }

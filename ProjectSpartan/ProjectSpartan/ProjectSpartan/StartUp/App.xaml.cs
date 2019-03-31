@@ -1,4 +1,5 @@
 ﻿using ProjectSpartan.UI.StartUp;
+using ProjectSpartan.UI.Views;
 using SimpleInjector;
 using System;
 using Xamarin.Forms;
@@ -15,7 +16,7 @@ namespace ProjectSpartan.UI
         {
             InitializeComponent();
             Container = IOCConfigurationHelper.GetRegisteredContainer();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
