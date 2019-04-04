@@ -17,6 +17,12 @@ namespace ProjectSpartan.Framework.Services
             _dependencyResolutionService = dependencyResolutionService;
         }
 
+        public void InitializeNavigation<TViewModel>() where TViewModel : BaseViewModel
+        {
+            Page page = CreatePage(typeof(TViewModel), null);
+            Application.Current.MainPage = new NavigationPage(page);
+        }
+
         public async Task BackAsync()
         {
             await Application.Current.MainPage.Navigation.PopAsync();

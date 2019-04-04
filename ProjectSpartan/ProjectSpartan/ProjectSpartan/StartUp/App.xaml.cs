@@ -17,10 +17,10 @@ namespace ProjectSpartan.UI
         public App()
         {
             InitializeComponent();
-            Container = IOCConfigurationHelper.GetRegisteredContainer();
+            Container = IOCConfiguration.GetRegisteredContainer();
+
             var navigationService = Container.GetInstance<INavigationService>();
-            navigationService.NavigateToAsync<MainPageViewModel>();
-            //MainPage = new NavigationPage(new MainPage(navigationService));
+            navigationService.InitializeNavigation<MainPageViewModel>();
         }
 
         protected override void OnStart()

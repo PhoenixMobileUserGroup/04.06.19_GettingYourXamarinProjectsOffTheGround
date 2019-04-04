@@ -4,7 +4,7 @@ using SimpleInjector;
 
 namespace ProjectSpartan.UI.StartUp
 {
-    public static class IOCConfigurationHelper
+    public static class IOCConfiguration
     {
         public static Container GetRegisteredContainer()
         {
