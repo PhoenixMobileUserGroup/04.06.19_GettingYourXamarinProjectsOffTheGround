@@ -1,7 +1,7 @@
 ﻿using PropertyChanged;
 using System.Threading.Tasks;
 
-namespace ProjectSpartan.UI.ViewModels
+namespace ProjectSpartan.Framework.UI
 {
     [AddINotifyPropertyChangedInterface]
     public abstract class BaseViewModel
@@ -12,5 +12,3 @@ namespace ProjectSpartan.UI.ViewModels
         public Task OnDisappearing() { return Task.CompletedTask; }
     }
 }
-
-

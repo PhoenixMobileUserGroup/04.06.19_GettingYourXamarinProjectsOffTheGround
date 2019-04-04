@@ -1,4 +1,6 @@
-﻿namespace ProjectSpartan.UI.ViewModels
+﻿using ProjectSpartan.Framework.UI;
+
+namespace ProjectSpartan.UI.ViewModels
 {
     public class MainPageViewModel : BaseViewModel
     {

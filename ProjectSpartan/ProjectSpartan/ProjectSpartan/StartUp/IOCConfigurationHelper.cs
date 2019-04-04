@@ -1,4 +1,6 @@
-﻿using SimpleInjector;
+﻿using ProjectSpartan.Framework.Contracts;
+using ProjectSpartan.Framework.Services;
+using SimpleInjector;
 
 namespace ProjectSpartan.UI.StartUp
 {
@@ -14,7 +16,7 @@ namespace ProjectSpartan.UI.StartUp
 
         private static void RegisterServices(Container container)
         {
-
+            container.RegisterSingleton<IDependencyResolutionService>(() => new DependencyResolutionService(container));
         }
 
         private static void RegisterRepositories(Container container)

@@ -1,4 +1,4 @@
-﻿using ProjectSpartan.UI.ViewModels;
+﻿using ProjectSpartan.Framework.UI;
 using System;
 using Xamarin.Forms;
 
@@ -15,8 +15,11 @@ namespace ProjectSpartan.UI.Views
 
         private async void OnAppearing(object sender, EventArgs e)
         {
-            if(!HasAppeared)
+            if (!HasAppeared)
+            {
                 Title = (BindingContext as BaseViewModel).Title;
+                HasAppeared = true;
+            }
 
             await (BindingContext as BaseViewModel)?.OnAppearing();
         }
