@@ -10,5 +10,9 @@ namespace ProjectSpartan.Framework.UI
         public bool IsBusy { get; set; }
         public Task OnAppearing() { return Task.CompletedTask; }
         public Task OnDisappearing() { return Task.CompletedTask; }
+        public virtual Task InitializeAsync(object navigationalParameter)
+        {
+            return Task.FromResult(false);
+        }
     }
 }

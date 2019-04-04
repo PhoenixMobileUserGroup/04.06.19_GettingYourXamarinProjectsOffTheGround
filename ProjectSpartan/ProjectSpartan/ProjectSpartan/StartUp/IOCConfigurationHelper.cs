@@ -17,6 +17,7 @@ namespace ProjectSpartan.UI.StartUp
         private static void RegisterServices(Container container)
         {
             container.RegisterSingleton<IDependencyResolutionService>(() => new DependencyResolutionService(container));
+            container.RegisterSingleton<INavigationService, NavigationService>();
         }
 
         private static void RegisterRepositories(Container container)

@@ -1,4 +1,6 @@
-﻿using ProjectSpartan.UI.StartUp;
+﻿using ProjectSpartan.Framework.Contracts;
+using ProjectSpartan.UI.StartUp;
+using ProjectSpartan.UI.ViewModels;
 using ProjectSpartan.UI.Views;
 using SimpleInjector;
 using System;
@@ -16,7 +18,9 @@ namespace ProjectSpartan.UI
         {
             InitializeComponent();
             Container = IOCConfigurationHelper.GetRegisteredContainer();
-            MainPage = new NavigationPage(new MainPage());
+            var navigationService = Container.GetInstance<INavigationService>();
+            navigationService.NavigateToAsync<MainPageViewModel>();
+            //MainPage = new NavigationPage(new MainPage(navigationService));
         }
 
         protected override void OnStart()
