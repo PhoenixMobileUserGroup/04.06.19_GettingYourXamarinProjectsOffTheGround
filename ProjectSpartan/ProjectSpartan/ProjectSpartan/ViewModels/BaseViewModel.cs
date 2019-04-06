@@ -11,11 +11,8 @@ namespace ProjectSpartan.UI.ViewModels
     {
         public string Title { get; set; }
         public bool IsBusy { get; set; }
-        public Task OnAppearing() { return Task.CompletedTask; }
-        public Task OnDisappearing() { return Task.CompletedTask; }
-        public virtual Task InitializeAsync(object navigationalParameter)
-        {
-            return Task.FromResult(false);
-        }
+        public Task OnAppearing() => Task.CompletedTask;
+        public Task OnDisappearing() => Task.CompletedTask;
+        public Task InitializeAsync(object navigationalParameter) => Task.CompletedTask;
     }
 }
