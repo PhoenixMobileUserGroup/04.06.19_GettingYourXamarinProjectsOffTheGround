@@ -1,12 +1,15 @@
-﻿using ProjectSpartan.Framework.Contracts;
-using ProjectSpartan.Framework.UI;
+﻿using ProjectSpartan.Business.Contracts;
+using ProjectSpartan.UI.Navigation.Contracts;
+using ProjectSpartan.UI.ViewModels;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace ProjectSpartan.Framework.Services
+namespace ProjectSpartan.UI.Navigation.Services
 {
     public class NavigationService : INavigationService
     {

@@ -1,4 +1,4 @@
-﻿using ProjectSpartan.Framework.Contracts;
+﻿using ProjectSpartan.UI.Navigation.Contracts;
 using ProjectSpartan.UI.StartUp;
 using ProjectSpartan.UI.ViewModels;
 using ProjectSpartan.UI.Views;

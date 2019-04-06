@@ -1,13 +1,13 @@
-﻿using ProjectSpartan.Framework.Contracts;
+﻿using ProjectSpartan.Business.Contracts;
 using SimpleInjector;
 using System;
 
-namespace ProjectSpartan.Framework.Services
+namespace ProjectSpartan.Business.Services
 {
     public class DependencyResolutionService : IDependencyResolutionService
     {
         private readonly Container _container;
-
+         
         public DependencyResolutionService(Container container)
         {
             _container = container;

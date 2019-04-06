@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace ProjectSpartan.Framework.Contracts
+namespace ProjectSpartan.Business.Contracts
 {
     public interface IDependencyResolutionService
     {
@@ -8,4 +10,3 @@ namespace ProjectSpartan.Framework.Contracts
         object GetInstance(Type type);
     }
 }
-

@@ -1,7 +1,10 @@
 ﻿using PropertyChanged;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectSpartan.Framework.UI
+namespace ProjectSpartan.UI.ViewModels
 {
     [AddINotifyPropertyChangedInterface]
     public abstract class BaseViewModel

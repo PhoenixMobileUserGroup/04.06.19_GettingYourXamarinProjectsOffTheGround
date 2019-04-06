@@ -1,5 +1,7 @@
-﻿using ProjectSpartan.Framework.Contracts;
-using ProjectSpartan.Framework.Services;
+﻿using ProjectSpartan.Business.Contracts;
+using ProjectSpartan.Business.Services;
+using ProjectSpartan.UI.Navigation.Contracts;
+using ProjectSpartan.UI.Navigation.Services;
 using SimpleInjector;
 
 namespace ProjectSpartan.UI.StartUp

@@ -1,5 +1,4 @@
-﻿using ProjectSpartan.Framework.Contracts;
-using ProjectSpartan.Framework.UI;
+﻿using ProjectSpartan.UI.Navigation.Contracts;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;

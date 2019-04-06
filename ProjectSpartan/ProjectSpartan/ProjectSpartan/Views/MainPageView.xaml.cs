@@ -1,5 +1,4 @@
-﻿using ProjectSpartan.Framework.Contracts;
-using ProjectSpartan.UI.ViewModels;
+﻿using ProjectSpartan.UI.ViewModels;
 
 namespace ProjectSpartan.UI.Views
 {

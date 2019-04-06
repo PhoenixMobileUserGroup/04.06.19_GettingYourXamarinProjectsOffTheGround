@@ -1,4 +1,4 @@
-﻿using ProjectSpartan.Framework.UI;
+﻿using ProjectSpartan.UI.ViewModels;
 using System;
 using Xamarin.Forms;
 

@@ -33,11 +33,12 @@
     <Folder Include="Behaviors\" />
     <Folder Include="Converters\" />
     <Folder Include="Controls\" />
+    <Folder Include="Navigation\Messages\" />
     <Folder Include="Styles\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ProjectSpartan.Framework\ProjectSpartan.Framework.csproj" />
+    <ProjectReference Include="..\..\ProjectSpartan.Business\ProjectSpartan.Business.csproj" />
   </ItemGroup>
 
   <ItemGroup>

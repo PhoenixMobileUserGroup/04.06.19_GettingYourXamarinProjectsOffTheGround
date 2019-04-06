@@ -1,7 +1,10 @@
-﻿using ProjectSpartan.Framework.UI;
+﻿using ProjectSpartan.UI.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectSpartan.Framework.Contracts
+namespace ProjectSpartan.UI.Navigation.Contracts
 {
     public interface INavigationService
     {
